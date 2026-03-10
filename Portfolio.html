@@ -1,0 +1,363 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Neeraja Bandaru Portfolio</title>
+
+<style>
+
+/* Reset */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Times New Roman', Times, serif;
+}
+
+body{
+background:#e6f4f9;
+color:#333;
+line-height:1.6;
+}
+
+/* CONTAINER */
+
+.container{
+max-width:900px;
+margin:auto;
+padding:20px;
+}
+
+/* Navbar */
+
+nav{
+background:#007bb5;
+padding:15px;
+display:flex;
+justify-content:center;
+gap:30px;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+font-weight:bold;
+}
+
+nav a:hover{
+text-decoration:underline;
+}
+
+/* Sections */
+
+section{
+padding:60px 20px;
+}
+
+/* Hero */
+
+.hero{
+text-align:center;
+padding:80px 20px;
+}
+
+.hero h1{
+font-size:2.5rem;
+color:#007bb5;
+}
+
+.hero h2{
+font-size:1.3rem;
+color:#555;
+margin-top:10px;
+}
+
+.hero p{
+margin-top:15px;
+}
+
+/* Buttons */
+
+.btn{
+display:inline-block;
+margin-top:20px;
+padding:10px 20px;
+background:#007bb5;
+color:white;
+border-radius:5px;
+text-decoration:none;
+}
+
+.btn:hover{
+background:#005f8b;
+}
+
+/* Skills */
+
+.skills-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:20px;
+margin-top:30px;
+}
+
+.skill-card{
+background:white;
+padding:20px;
+border-radius:8px;
+box-shadow:0 3px 8px rgba(0,0,0,0.1);
+}
+
+/* Projects */
+
+.projects{
+margin-top:30px;
+}
+
+.project{
+background:white;
+padding:20px;
+margin-bottom:25px;
+border-radius:8px;
+box-shadow:0 4px 10px rgba(0,0,0,0.1);
+border-left:6px solid #007bb5;
+}
+
+.project h3{
+color:#007bb5;
+margin-bottom:10px;
+}
+
+.project p{
+margin-bottom:8px;
+}
+
+/* Contact */
+
+.contact p{
+margin-top:10px;
+}
+
+/* Footer */
+
+footer{
+text-align:center;
+padding:20px;
+background:#007bb5;
+color:white;
+margin-top:40px;
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+<nav>
+<a href="#about">About</a>
+<a href="#skills">Skills</a>
+<a href="#projects">Projects</a>
+<a href="#contact">Contact</a>
+</nav>
+
+
+<div class="container">
+
+<!-- HERO -->
+
+<section class="hero">
+
+<h1>Neeraja Sri Saravani Bandaru</h1>
+
+<h2>Cloud & Data Analyst – Entry Level</h2>
+
+<p>
+Computer Science graduate passionate about building
+data-driven applications using Python, AWS, Power BI and React.
+</p>
+
+<a class="btn" href="resume.pdf">Download Resume</a>
+
+</section>
+
+
+<!-- ABOUT -->
+
+<section id="about">
+
+<h2>About Me</h2>
+
+<p>
+I am a Computer Science graduate interested in data analytics
+and cloud-based application development. I enjoy working with
+Python for data processing, AWS for scalable cloud solutions,
+and React.js for interactive web applications.
+</p>
+
+<br>
+
+<p>
+My goal is to build intelligent systems that combine
+data, cloud computing, and modern web technologies.
+</p>
+
+</section>
+
+
+<!-- SKILLS -->
+
+<section id="skills">
+
+<h2>Skills</h2>
+
+<div class="skills-grid">
+
+<div class="skill-card">
+<h3>Programming</h3>
+<p>Python<br>JavaScript</p>
+</div>
+
+<div class="skill-card">
+<h3>Cloud</h3>
+<p>AWS<br>S3<br>Lambda<br>DynamoDB<br>IAM<br>CloudFront</p>
+</div>
+
+<div class="skill-card">
+<h3>Visualization</h3>
+<p>Power BI<br>Tableau (Basic)</p>
+</div>
+
+<div class="skill-card">
+<h3>Web Development</h3>
+<p>React.js<br>HTML<br>CSS</p>
+</div>
+
+</div>
+
+</section>
+
+
+<!-- PROJECTS -->
+
+<section id="projects">
+
+<h2>Projects</h2>
+
+<div class="projects">
+
+<div class="project">
+
+<h3>1. HR Analytics Dashboard using Power BI</h3>
+
+<p><strong>Objective:</strong> Analyze employee attrition data to identify trends and risk factors.</p>
+
+<p><strong>Tools:</strong> Power BI, Excel, Power Query</p>
+
+<p><strong>Description:</strong>
+Built an interactive HR dashboard to analyze employee attrition by education, age, salary and job roles.
+The dashboard highlights key metrics and helps organizations identify patterns affecting employee retention.
+</p>
+
+</div>
+
+
+<div class="project">
+
+<h3>2. Smart Tender / Contract Management System using Blockchain</h3>
+
+<p><strong>Objective:</strong> Develop a secure system for managing government and corporate tenders.</p>
+
+<p><strong>Tools:</strong> Blockchain, JavaScript, HTML, Python</p>
+
+<p><strong>Description:</strong>
+Designed a blockchain-based contract management system that ensures secure tender processing.
+The system improves transparency, prevents data tampering and maintains secure transaction records.
+</p>
+
+</div>
+
+
+<div class="project">
+
+<h3>3. Serverless Application using AWS</h3>
+
+<p><strong>Objective:</strong> Build a cloud-based serverless data storage workflow.</p>
+
+<p><strong>Tools:</strong> AWS Lambda, DynamoDB, Amazon S3</p>
+
+<p><strong>Description:</strong>
+Developed a serverless architecture where AWS Lambda handles backend logic,
+DynamoDB stores application data and S3 manages static files.
+This demonstrates event-driven cloud architecture.
+</p>
+
+</div>
+
+
+<div class="project">
+
+<h3>4. Static Website Hosting on AWS S3 with CloudFront</h3>
+
+<p><strong>Objective:</strong> Deploy and host a static website on AWS cloud.</p>
+
+<p><strong>Tools:</strong> AWS S3, CloudFront, IAM, ACM</p>
+
+<p><strong>Description:</strong>
+Hosted a static website using Amazon S3 and configured CloudFront
+for global content delivery. Implemented IAM policies and HTTPS
+security using AWS Certificate Manager.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- CONTACT -->
+
+<section id="contact" class="contact">
+
+<h2>Contact</h2>
+
+<p>Email: neerajasrisridhar@gmail.com</p>
+
+<p>Phone: +91 9493755222</p>
+
+<p>
+LinkedIn:
+<a href="https://linkedin.com/in/neeraja-sri-saravani-bandaru-bb4b481b4">
+View Profile
+</a>
+</p>
+
+<p>
+GitHub:
+<a href="#">Add Your GitHub Link</a>
+</p>
+
+</section>
+
+
+</div>
+
+
+<footer>
+
+<p>© 2026 Neeraja Bandaru</p>
+
+</footer>
+
+</body>
+
+</html>
+```
